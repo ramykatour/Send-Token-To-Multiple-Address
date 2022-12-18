@@ -1,0 +1,46 @@
+.header {
+  margin-bottom: 40px;
+  padding: 20px 0;
+  border-bottom: 1px solid fade-out(#95d5ff, 0.9);
+
+  @media (max-width: $mobile--width) {
+    margin-bottom: 30px;
+  }
+
+  .multisend-container {
+    @extend %flex-between;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .form {
+    flex-wrap: inherit;
+  }
+
+  .multisend-label {
+    @extend %control-font;
+    display: block;
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%;
+    white-space: nowrap;
+
+    .form_header & {
+      margin-right: 15px;
+      margin-bottom: 0;
+    }
+  }
+
+  &-logo {
+    //@include image-2x('../images/logo.png');
+    display: none;
+    font-size: 22px;
+    text-decoration: none;
+    //background-image: url(../images/logo.png);
+
+    @media (max-width: $container-responsive--width) {
+      width: 36px;
+      background-size: 200px 100%;
+    }
+  }
+}
